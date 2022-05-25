@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "52cdbb75-d79a-46e6-a67f-7e87afcfcb8c": {
+      "ProjectGuid": "52cdbb75-d79a-46e6-a67f-7e87afcfcb8c",
+      "DisplayName": "Patient-ApiSQLMigration",
+      "ColorIndex": 0
+    },
+    "eb005c89-b8cd-4658-b697-fc8a9fb2bcbc": {
+      "ProjectGuid": "eb005c89-b8cd-4658-b697-fc8a9fb2bcbc",
+      "DisplayName": "API.DataLayer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

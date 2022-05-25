@@ -1,0 +1,101 @@
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.exe
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.deps.json
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.runtimeconfig.json
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.runtimeconfig.dev.json
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.dll
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.pdb
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.AssemblyReference.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.AssemblyInfoInputs.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.AssemblyInfo.cs
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.CoreCompileInputs.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.MvcApplicationPartsAssemblyInfo.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\staticwebassets\Patient-ApiSQLMigration.StaticWebAssets.Manifest.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\staticwebassets\Patient-ApiSQLMigration.StaticWebAssets.xml
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\scopedcss\bundle\Patient-ApiSQLMigration.styles.css
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.RazorTargetAssemblyInfo.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.dll
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.pdb
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.genruntimeconfig.cache
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.MvcApplicationPartsAssemblyInfo.cs
+C:\Ashok\MyWork\Medical company\Patient-App-Api\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.CopyComplete
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.exe
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.deps.json
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.runtimeconfig.json
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.runtimeconfig.dev.json
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.pdb
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csprojAssemblyReference.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.AssemblyInfoInputs.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.AssemblyInfo.cs
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.CoreCompileInputs.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.RazorTargetAssemblyInfo.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.CopyComplete
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\staticwebassets\Patient-ApiSQLMigration.StaticWebAssets.Manifest.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\staticwebassets\Patient-ApiSQLMigration.StaticWebAssets.xml
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.pdb
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.genruntimeconfig.cache
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\API.DataLayer.dll
+C:\Users\sriva\Downloads\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\API.DataLayer.pdb
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.pdb
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.AssemblyReference.cache
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.AssemblyInfoInputs.cache
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.AssemblyInfo.cs
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.CoreCompileInputs.cache
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.StaticWebAssets.xml
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.exe
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.deps.json
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.runtimeconfig.json
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.runtimeconfig.dev.json
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Patient-ApiSQLMigration.pdb
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\API.DataLayer.dll
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\bin\Debug\netcoreapp3.1\API.DataLayer.pdb
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\staticwebassets\Patient-ApiSQLMigration.StaticWebAssets.Manifest.cache
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.RazorTargetAssemblyInfo.cache
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.csproj.CopyComplete
+C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\Patient-ApiSQLMigration\obj\Debug\netcoreapp3.1\Patient-ApiSQLMigration.genruntimeconfig.cache
