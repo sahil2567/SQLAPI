@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dMo6UY8AC+lWiiZWzpEmfJOP/aY03ArYXjN95o4O7TbS1xwqfumArErSOlY6Js6fy0a6jowzTqTiF3xTfPVo0A==",
+  "dgSpecHash": "cJHFIzVfEiaaN9fDaZRtSBhxalul3TdezJ1fKX+F9/HTZxzpWsk4JariiH17uvn4exx5DRu/G/Mm/y4fvmQAYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sahil\\Downloads\\Patient-ApiSQLMigration2\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
+  "projectFilePath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sahil\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\sahil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

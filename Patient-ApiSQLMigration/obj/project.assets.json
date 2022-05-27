@@ -783,11 +783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sahil\\Downloads\\Patient-ApiSQLMigration2\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
+      "projectUniqueName": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
       "projectName": "Patient-ApiSQLMigration",
-      "projectPath": "C:\\Users\\sahil\\Downloads\\Patient-ApiSQLMigration2\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
+      "projectPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
       "packagesPath": "C:\\Users\\sahil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sahil\\Downloads\\Patient-ApiSQLMigration2\\Patient-ApiSQLMigration\\obj\\",
+      "outputPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -809,8 +809,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\sahil\\Downloads\\Patient-ApiSQLMigration2\\API.DataLayer\\API.DataLayer.csproj": {
-              "projectPath": "C:\\Users\\sahil\\Downloads\\Patient-ApiSQLMigration2\\API.DataLayer\\API.DataLayer.csproj"
+            "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {
+              "projectPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj"
             }
           }
         }
