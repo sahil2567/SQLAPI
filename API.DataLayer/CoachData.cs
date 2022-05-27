@@ -67,14 +67,14 @@ namespace API.DataLayer
             }
         }
 
-        public async Task<List<Coach>> GetCoach()
+        public async Task<List<Coach>> GetCoach(string ActiveStatus)
         {
             List<Coach> patients = new List<Coach>();
             try
             {
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,ContactNo,CreatedDate,Email,GSI1PK,GSI1SK,UserId,UserName,UserType FROM [dbo].[CoachTable]", con);
+                    SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,ContactNo,CreatedDate,Email,GSI1PK,GSI1SK,UserId,UserName,UserType FROM [dbo].[CoachTable] Where ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
                     cmd.CommandType = System.Data.CommandType.Text;
                     DataTable table = new DataTable();
                     SqlDataAdapter da = new SqlDataAdapter(cmd);

@@ -22,9 +22,9 @@ namespace Patient_ApiSQLMigration.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(List<CareCoordinator>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<CareCoordinator>), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> getCareCoordinatorList()
+        public async Task<IActionResult> getCareCoordinatorList(string ActiveStatus)
         {
-            return Ok(await careCoordinatorData.GetCareCoordinator());
+            return Ok(await careCoordinatorData.GetCareCoordinator(ActiveStatus));
         }
 
         [HttpPost]

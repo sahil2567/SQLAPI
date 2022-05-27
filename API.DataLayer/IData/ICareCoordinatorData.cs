@@ -8,7 +8,7 @@ namespace API.DataLayer.IData
 {
     public interface ICareCoordinatorData
     {
-        Task<List<CareCoordinator>> GetCareCoordinator();
+        Task<List<CareCoordinator>> GetCareCoordinator(string ActiveStatus);
         Task<string> AddCareCoordinator(CareCoordinator careCoordinator);
         Task<string> UpdateCareCoordinator(CareCoordinator careCoordinator);
         Task<string> DeleteCareCoordinator(int Id);

@@ -8,7 +8,7 @@ namespace API.DataLayer.IData
 {
     public interface IDoctorData
     {
-        Task<List<Doctor>> GetDoctor();
+        Task<List<Doctor>> GetDoctor(string ActiveStatus);
         Task<string> AddDoctor(Doctor doctor);
         Task<string> UpdateDoctor(Doctor doctor);
         Task<string> DeleteDoctor(int Id);

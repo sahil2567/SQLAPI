@@ -22,9 +22,9 @@ namespace Patient_ApiSQLMigration.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(List<Doctor>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<Doctor>), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> getDoctorList()
+        public async Task<IActionResult> getDoctorList(string ActiveStatus)
         {
-            return Ok(await doctorData.GetDoctor());
+            return Ok(await doctorData.GetDoctor(ActiveStatus));
         }
 
         [HttpPost]
