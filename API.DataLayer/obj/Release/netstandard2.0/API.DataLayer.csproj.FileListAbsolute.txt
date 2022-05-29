@@ -8,3 +8,13 @@ C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\API.DataLayer\obj\Release\nets
 C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.csproj.CoreCompileInputs.cache
 C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.dll
 C:\Users\sahil\Downloads\Patient-ApiSQLMigration2\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.pdb
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\bin\Release\netstandard2.0\API.DataLayer.deps.json
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\bin\Release\netstandard2.0\API.DataLayer.dll
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\bin\Release\netstandard2.0\API.DataLayer.pdb
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.csproj.AssemblyReference.cache
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.AssemblyInfoInputs.cache
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.AssemblyInfo.cs
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.dll
+C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.pdb
