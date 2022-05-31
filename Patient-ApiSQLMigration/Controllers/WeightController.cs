@@ -22,9 +22,9 @@ namespace Patient_ApiSQLMigration.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(List<Weight>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<Weight>), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> getWeightList()
+        public async Task<IActionResult> getWeightList(string GSI1PK)
         {
-            return Ok(await weightData.GetWeight());
+            return Ok(await weightData.GetWeight(GSI1PK));
         }
 
         [HttpPost]

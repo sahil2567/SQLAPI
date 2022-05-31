@@ -67,58 +67,111 @@ namespace API.DataLayer
             }
         }
 
-        public async Task<List<BG>> GetBG()
+        public async Task<List<BG>> GetBG(string GSI1PK)
         {
             List<BG> patients = new List<BG>();
             try
             {
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActionTaken,ActiveStatus,Battery,BatteryVoltage,Before_Meal,BloodGlucosemgdl,BloodGlucosemmol,CreatedDate,Date_Received,Date_Recorded,Device_Model,DeviceId,Event_Flag,GSI1PK,GSI1SK,MeasurementDateTime,Meter_Id,Reading,Reading_Id,Reading_Type,SignalStrength,Time_Zone_Offset,TimeSlots,UpdateDate,UserName FROM [dbo].[BloodGlucoseTable]", con);
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    DataTable table = new DataTable();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(table);
-                    if (table.Rows.Count > 0)
+                    if (Equals(GSI1PK, "DEVICE_BG_"))
                     {
-                        for (int i = 0; i < table.Rows.Count; i++)
+                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActionTaken,ActiveStatus,Battery,BatteryVoltage,Before_Meal,BloodGlucosemgdl,BloodGlucosemmol,CreatedDate,Date_Received,Date_Recorded,Device_Model,DeviceId,Event_Flag,GSI1PK,GSI1SK,MeasurementDateTime,Meter_Id,Reading,Reading_Id,Reading_Type,SignalStrength,Time_Zone_Offset,TimeSlots,UpdateDate,UserName FROM [dbo].[BloodGlucoseTable]", con);
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        DataTable table = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(table);
+                        if (table.Rows.Count > 0)
                         {
-                            patients.Add(new BG
+                            for (int i = 0; i < table.Rows.Count; i++)
                             {
-                                Id = Convert.ToInt32(table.Rows[i]["Id"].ToString()),
-                                SK = table.Rows[i]["SK"].ToString(),
-                                ActionTaken = table.Rows[i]["ActionTaken"].ToString(),
-                                ActiveStatus = table.Rows[i]["ActiveStatus"].ToString(),
-                                Battery = table.Rows[i]["Battery"].ToString(),
-                                BatteryVoltage = table.Rows[i]["BatteryVoltage"].ToString(),
-                                Before_Meal = table.Rows[i]["Before_Meal"].ToString(),
-                                BloodGlucosemgdl = table.Rows[i]["BloodGlucosemgdl"].ToString(),
-                                BloodGlucosemmol = table.Rows[i]["BloodGlucosemmol"].ToString(),
-                                CreatedDate = table.Rows[i]["CreatedDate"].ToString(),
-                                Date_Received = table.Rows[i]["Date_Received"].ToString(),
-                                Date_Recorded = table.Rows[i]["Date_Recorded"].ToString(),
-                                Device_Model = table.Rows[i]["Device_Model"].ToString(),
-                                DeviceId = table.Rows[i]["DeviceId"].ToString(),
-                                Event_Flag = table.Rows[i]["Event_Flag"].ToString(),
-                                GSI1PK = table.Rows[i]["GSI1PK"].ToString(),
-                                GSI1SK = table.Rows[i]["GSI1SK"].ToString(),
-                                MeasurementDateTime = table.Rows[i]["MeasurementDateTime"].ToString(),
-                                Meter_Id = table.Rows[i]["Meter_Id"].ToString(),
-                                Reading = table.Rows[i]["Reading"].ToString(),
-                                Reading_Id = table.Rows[i]["Reading_Id"].ToString(),
-                                Reading_Type = table.Rows[i]["Reading_Type"].ToString(),
-                                SignalStrength = table.Rows[i]["SignalStrength"].ToString(),
-                                Time_Zone_Offset = table.Rows[i]["Time_Zone_Offset"].ToString(),
-                                TimeSlots = table.Rows[i]["TimeSlots"].ToString(),
-                                UpdateDate = table.Rows[i]["UpdateDate"].ToString(),
-                                UserName = table.Rows[i]["UserName"].ToString(),
+                                patients.Add(new BG
+                                {
+                                    Id = Convert.ToInt32(table.Rows[i]["Id"].ToString()),
+                                    SK = table.Rows[i]["SK"].ToString(),
+                                    ActionTaken = table.Rows[i]["ActionTaken"].ToString(),
+                                    ActiveStatus = table.Rows[i]["ActiveStatus"].ToString(),
+                                    Battery = table.Rows[i]["Battery"].ToString(),
+                                    BatteryVoltage = table.Rows[i]["BatteryVoltage"].ToString(),
+                                    Before_Meal = table.Rows[i]["Before_Meal"].ToString(),
+                                    BloodGlucosemgdl = table.Rows[i]["BloodGlucosemgdl"].ToString(),
+                                    BloodGlucosemmol = table.Rows[i]["BloodGlucosemmol"].ToString(),
+                                    CreatedDate = table.Rows[i]["CreatedDate"].ToString(),
+                                    Date_Received = table.Rows[i]["Date_Received"].ToString(),
+                                    Date_Recorded = table.Rows[i]["Date_Recorded"].ToString(),
+                                    Device_Model = table.Rows[i]["Device_Model"].ToString(),
+                                    DeviceId = table.Rows[i]["DeviceId"].ToString(),
+                                    Event_Flag = table.Rows[i]["Event_Flag"].ToString(),
+                                    GSI1PK = table.Rows[i]["GSI1PK"].ToString(),
+                                    GSI1SK = table.Rows[i]["GSI1SK"].ToString(),
+                                    MeasurementDateTime = table.Rows[i]["MeasurementDateTime"].ToString(),
+                                    Meter_Id = table.Rows[i]["Meter_Id"].ToString(),
+                                    Reading = table.Rows[i]["Reading"].ToString(),
+                                    Reading_Id = table.Rows[i]["Reading_Id"].ToString(),
+                                    Reading_Type = table.Rows[i]["Reading_Type"].ToString(),
+                                    SignalStrength = table.Rows[i]["SignalStrength"].ToString(),
+                                    Time_Zone_Offset = table.Rows[i]["Time_Zone_Offset"].ToString(),
+                                    TimeSlots = table.Rows[i]["TimeSlots"].ToString(),
+                                    UpdateDate = table.Rows[i]["UpdateDate"].ToString(),
+                                    UserName = table.Rows[i]["UserName"].ToString(),
 
 
-                            });
+                                });
+                            }
                         }
+                        return patients;
+
                     }
-                    return patients;
+                    else
+                    {
+                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActionTaken,ActiveStatus,Battery,BatteryVoltage,Before_Meal,BloodGlucosemgdl,BloodGlucosemmol,CreatedDate,Date_Received,Date_Recorded,Device_Model,DeviceId,Event_Flag,GSI1PK,GSI1SK,MeasurementDateTime,Meter_Id,Reading,Reading_Id,Reading_Type,SignalStrength,Time_Zone_Offset,TimeSlots,UpdateDate,UserName FROM [dbo].[BloodGlucoseTable] Where GSI1PK LIKE '" + GSI1PK.ToString() + "'", con);
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        DataTable table = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(table);
+                        if (table.Rows.Count > 0)
+                        {
+                            for (int i = 0; i < table.Rows.Count; i++)
+                            {
+                                patients.Add(new BG
+                                {
+                                    Id = Convert.ToInt32(table.Rows[i]["Id"].ToString()),
+                                    SK = table.Rows[i]["SK"].ToString(),
+                                    ActionTaken = table.Rows[i]["ActionTaken"].ToString(),
+                                    ActiveStatus = table.Rows[i]["ActiveStatus"].ToString(),
+                                    Battery = table.Rows[i]["Battery"].ToString(),
+                                    BatteryVoltage = table.Rows[i]["BatteryVoltage"].ToString(),
+                                    Before_Meal = table.Rows[i]["Before_Meal"].ToString(),
+                                    BloodGlucosemgdl = table.Rows[i]["BloodGlucosemgdl"].ToString(),
+                                    BloodGlucosemmol = table.Rows[i]["BloodGlucosemmol"].ToString(),
+                                    CreatedDate = table.Rows[i]["CreatedDate"].ToString(),
+                                    Date_Received = table.Rows[i]["Date_Received"].ToString(),
+                                    Date_Recorded = table.Rows[i]["Date_Recorded"].ToString(),
+                                    Device_Model = table.Rows[i]["Device_Model"].ToString(),
+                                    DeviceId = table.Rows[i]["DeviceId"].ToString(),
+                                    Event_Flag = table.Rows[i]["Event_Flag"].ToString(),
+                                    GSI1PK = table.Rows[i]["GSI1PK"].ToString(),
+                                    GSI1SK = table.Rows[i]["GSI1SK"].ToString(),
+                                    MeasurementDateTime = table.Rows[i]["MeasurementDateTime"].ToString(),
+                                    Meter_Id = table.Rows[i]["Meter_Id"].ToString(),
+                                    Reading = table.Rows[i]["Reading"].ToString(),
+                                    Reading_Id = table.Rows[i]["Reading_Id"].ToString(),
+                                    Reading_Type = table.Rows[i]["Reading_Type"].ToString(),
+                                    SignalStrength = table.Rows[i]["SignalStrength"].ToString(),
+                                    Time_Zone_Offset = table.Rows[i]["Time_Zone_Offset"].ToString(),
+                                    TimeSlots = table.Rows[i]["TimeSlots"].ToString(),
+                                    UpdateDate = table.Rows[i]["UpdateDate"].ToString(),
+                                    UserName = table.Rows[i]["UserName"].ToString(),
+
+
+                                });
+                            }
+                        }
+                        return patients;
+
+                    }
                 }
+
             }
             catch (Exception ex)
             {

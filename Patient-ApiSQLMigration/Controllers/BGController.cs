@@ -22,9 +22,9 @@ namespace Patient_ApiSQLMigration.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(List<BG>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(List<BG>), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> getBGList()
+        public async Task<IActionResult> getBGList(string GSI1PK)
         {
-            return Ok(await bgData.GetBG());
+            return Ok(await bgData.GetBG(GSI1PK));
         }
 
         [HttpPost]

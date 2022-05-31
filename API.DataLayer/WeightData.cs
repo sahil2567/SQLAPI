@@ -69,51 +69,95 @@ namespace API.DataLayer
             }
         }
 
-        public async Task<List<Weight>> GetWeight()
+        public async Task<List<Weight>> GetWeight(string GSI1PK)
         {
             List<Weight> patients = new List<Weight>();
             try
             {
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActionTaken,BatteryVoltage,BMI,CreatedDate,Date_Received,Date_Recorded,DeviceId,GSI1PK,GSI1SK,IMEI,MeasurementDateTime,MeasurementTimestamp,RSSI,SignalStrength,Tare,TimeSlots,Unit,UserName,weight FROM [dbo].[WeightTable]", con);
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    DataTable table = new DataTable();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(table);
-                    if (table.Rows.Count > 0)
+                    if (Equals(GSI1PK, "DEVICE_WS_"))
                     {
-                        for (int i = 0; i < table.Rows.Count; i++)
+                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActionTaken,BatteryVoltage,BMI,CreatedDate,Date_Received,Date_Recorded,DeviceId,GSI1PK,GSI1SK,IMEI,MeasurementDateTime,MeasurementTimestamp,RSSI,SignalStrength,Tare,TimeSlots,Unit,UserName,weight FROM [dbo].[WeightTable]", con);
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        DataTable table = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(table);
+                        if (table.Rows.Count > 0)
                         {
-                            patients.Add(new Weight
+                            for (int i = 0; i < table.Rows.Count; i++)
                             {
-                                Id = Convert.ToInt32(table.Rows[i]["Id"].ToString()),
-                                SK = table.Rows[i]["SK"].ToString(),
-                                ActionTaken = table.Rows[i]["ActionTaken"].ToString(),
-                                BatteryVoltage = table.Rows[i]["BatteryVoltage"].ToString(),
-                                BMI = table.Rows[i]["BMI"].ToString(),
-                                CreatedDate = table.Rows[i]["CreatedDate"].ToString(),
-                                Date_Received = table.Rows[i]["Date_Received"].ToString(),
-                                Date_Recorded = table.Rows[i]["Date_Recorded"].ToString(),
-                                DeviceId = table.Rows[i]["DeviceId"].ToString(),
-                                GSI1PK = table.Rows[i]["GSI1PK"].ToString(),
-                                GSI1SK = table.Rows[i]["GSI1SK"].ToString(),
-                                IMEI = table.Rows[i]["IMEI"].ToString(),
-                                MeasurementDateTime = table.Rows[i]["MeasurementDateTime"].ToString(),
-                                MeasurementTimestamp = table.Rows[i]["MeasurementTimestamp"].ToString(),
-                                RSSI = table.Rows[i]["RSSI"].ToString(),
-                                SignalStrength = table.Rows[i]["SignalStrength"].ToString(),
-                                Tare = table.Rows[i]["Tare"].ToString(),
-                                TimeSlots = table.Rows[i]["TimeSlots"].ToString(),
-                                Unit = table.Rows[i]["Unit"].ToString(),
-                                UserName = table.Rows[i]["UserName"].ToString(),
-                                weight = table.Rows[i]["weight"].ToString(),
+                                patients.Add(new Weight
+                                {
+                                    Id = Convert.ToInt32(table.Rows[i]["Id"].ToString()),
+                                    SK = table.Rows[i]["SK"].ToString(),
+                                    ActionTaken = table.Rows[i]["ActionTaken"].ToString(),
+                                    BatteryVoltage = table.Rows[i]["BatteryVoltage"].ToString(),
+                                    BMI = table.Rows[i]["BMI"].ToString(),
+                                    CreatedDate = table.Rows[i]["CreatedDate"].ToString(),
+                                    Date_Received = table.Rows[i]["Date_Received"].ToString(),
+                                    Date_Recorded = table.Rows[i]["Date_Recorded"].ToString(),
+                                    DeviceId = table.Rows[i]["DeviceId"].ToString(),
+                                    GSI1PK = table.Rows[i]["GSI1PK"].ToString(),
+                                    GSI1SK = table.Rows[i]["GSI1SK"].ToString(),
+                                    IMEI = table.Rows[i]["IMEI"].ToString(),
+                                    MeasurementDateTime = table.Rows[i]["MeasurementDateTime"].ToString(),
+                                    MeasurementTimestamp = table.Rows[i]["MeasurementTimestamp"].ToString(),
+                                    RSSI = table.Rows[i]["RSSI"].ToString(),
+                                    SignalStrength = table.Rows[i]["SignalStrength"].ToString(),
+                                    Tare = table.Rows[i]["Tare"].ToString(),
+                                    TimeSlots = table.Rows[i]["TimeSlots"].ToString(),
+                                    Unit = table.Rows[i]["Unit"].ToString(),
+                                    UserName = table.Rows[i]["UserName"].ToString(),
+                                    weight = table.Rows[i]["weight"].ToString(),
 
 
-                            });
+                                });
+                            }
                         }
+                        return patients;
                     }
-                    return patients;
+                    else
+                    {
+                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActionTaken,BatteryVoltage,BMI,CreatedDate,Date_Received,Date_Recorded,DeviceId,GSI1PK,GSI1SK,IMEI,MeasurementDateTime,MeasurementTimestamp,RSSI,SignalStrength,Tare,TimeSlots,Unit,UserName,weight FROM [dbo].[WeightTable] Where GSI1PK LIKE '" + GSI1PK.ToString() + "'", con);
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        DataTable table = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(table);
+                        if (table.Rows.Count > 0)
+                        {
+                            for (int i = 0; i < table.Rows.Count; i++)
+                            {
+                                patients.Add(new Weight
+                                {
+                                    Id = Convert.ToInt32(table.Rows[i]["Id"].ToString()),
+                                    SK = table.Rows[i]["SK"].ToString(),
+                                    ActionTaken = table.Rows[i]["ActionTaken"].ToString(),
+                                    BatteryVoltage = table.Rows[i]["BatteryVoltage"].ToString(),
+                                    BMI = table.Rows[i]["BMI"].ToString(),
+                                    CreatedDate = table.Rows[i]["CreatedDate"].ToString(),
+                                    Date_Received = table.Rows[i]["Date_Received"].ToString(),
+                                    Date_Recorded = table.Rows[i]["Date_Recorded"].ToString(),
+                                    DeviceId = table.Rows[i]["DeviceId"].ToString(),
+                                    GSI1PK = table.Rows[i]["GSI1PK"].ToString(),
+                                    GSI1SK = table.Rows[i]["GSI1SK"].ToString(),
+                                    IMEI = table.Rows[i]["IMEI"].ToString(),
+                                    MeasurementDateTime = table.Rows[i]["MeasurementDateTime"].ToString(),
+                                    MeasurementTimestamp = table.Rows[i]["MeasurementTimestamp"].ToString(),
+                                    RSSI = table.Rows[i]["RSSI"].ToString(),
+                                    SignalStrength = table.Rows[i]["SignalStrength"].ToString(),
+                                    Tare = table.Rows[i]["Tare"].ToString(),
+                                    TimeSlots = table.Rows[i]["TimeSlots"].ToString(),
+                                    Unit = table.Rows[i]["Unit"].ToString(),
+                                    UserName = table.Rows[i]["UserName"].ToString(),
+                                    weight = table.Rows[i]["weight"].ToString(),
+
+
+                                });
+                            }
+                        }
+                        return patients;
+                    }
                 }
             }
             catch (Exception ex)

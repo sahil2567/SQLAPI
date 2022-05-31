@@ -8,7 +8,7 @@ namespace API.DataLayer.IData
 {
     public interface IWeightData
     {
-        Task<List<Weight>> GetWeight();
+        Task<List<Weight>> GetWeight(string GSI1PK);
         Task<string> AddWeight(Weight weight);
         Task<string> UpdateWeight(Weight weight);
         Task<string> DeleteWeight(int Id);
