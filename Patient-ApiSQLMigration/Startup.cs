@@ -40,6 +40,7 @@ namespace Patient_ApiSQLMigration
             services.AddSingleton<IDoctorData, DoctorData>();
             services.AddSingleton<ITimeLogData, TimeLogData>();
             services.AddSingleton<IDeviceData, DeviceData>();
+            services.AddSingleton<IUserTableData, UserTableData>();
 
 
             services.AddCors(options =>
