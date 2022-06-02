@@ -24,12 +24,16 @@ namespace API.DataLayer
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
                     string query = "Insert Into [dbo].[PatientTable] (SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType) Values ('" + patient.SK + "','" + patient.ActiveStatus + "','" + patient.CarecoordinatorId + "','" + patient.CarecoordinatorName + "','" + patient.City + "','" + patient.Coach + "','" + patient.CoachId + "','" + patient.ConnectionId + "','" + patient.ContactNo + "','" + patient.CreatedDate + "','" + patient.diagnosisId + "','" + patient.diastolic + "','" + patient.DOB + "','" + patient.DoctorId+"','" + patient.DoctorName + "','" + patient.Email + "','" + patient.FirstName + "','" + patient.Gender + "','" + patient.GSI1PK + "','" + patient.GSI1SK + "','" + patient.Height + "','" + patient.Lang + "','" + patient.LastName + "','" + patient.MiddleName + "','" + patient.MobilePhone + "','" + patient.Notes + "','" + patient.OTP + "','" + patient.ProfileImage + "','" + patient.reading + "','" + patient.St + "','" + patient.Street + "','" + patient.systolic + "','" + patient.UserId + "','" + patient.UserName + "','" + patient.UserTimeZone + "','" + patient.UserType + "','" + patient.Weight + "','" + patient.WorkPhone + "','" + patient.Zip + "','" + patient.DeviceId + "','" + patient.DeviceStatus + "','" + patient.DeviceType + "'); ";
+                    string query1 = "Insert Into [dbo].[UserTable] (UserId,UserName,UserType,Email) Values ('" + patient.UserId + "','" + patient.UserName + "','" + patient.UserType + "','" + patient.Email + "'); ";
                     SqlCommand cmd = new SqlCommand(query, con);
+                    SqlCommand cmd1 = new SqlCommand(query1, con);
                     cmd.CommandType = System.Data.CommandType.Text;
+                    cmd1.CommandType = System.Data.CommandType.Text;
                     con.Open();
                     int i = cmd.ExecuteNonQuery();
+                    int j = cmd1.ExecuteNonQuery();
                     con.Close();
-                    return i > 0 ? "Y" : "N";
+                    return i > 0 && j > 0 ? "Y" : "N";
                 }
             }
             catch (Exception ex)

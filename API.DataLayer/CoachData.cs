@@ -24,12 +24,16 @@ namespace API.DataLayer
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
                     string query = "Insert Into [dbo].[CoachTable] (SK,ActiveStatus,ContactNo,CreatedDate,Email,GSI1PK,GSI1SK,UserId,UserName,UserType) Values ('"+coach.SK+"', '"+coach.ActiveStatus+"', '"+coach.ContactNo+"', '"+coach.CreatedDate+"', '"+coach.Email+"', '"+coach.GSI1PK+"', '"+coach.GSI1SK+"', '"+coach.UserId+"', '"+coach.UserName+"', '"+coach.UserType+"'); ";
+                    string query1 = "Insert Into [dbo].[UserTable] (UserId,UserName,UserType,Email) Values ('" + coach.UserId + "','" + coach.UserName + "','" + coach.UserType + "','" + coach.Email + "'); ";
                     SqlCommand cmd = new SqlCommand(query, con);
+                    SqlCommand cmd1 = new SqlCommand(query1, con);
                     cmd.CommandType = System.Data.CommandType.Text;
+                    cmd1.CommandType = System.Data.CommandType.Text;
                     con.Open();
                     int i = cmd.ExecuteNonQuery();
+                    int j = cmd1.ExecuteNonQuery();
                     con.Close();
-                    return i > 0 ? "Y" : "N";
+                    return i > 0 && j > 0 ? "Y" : "N";
                 }
             }
             catch (Exception ex)
