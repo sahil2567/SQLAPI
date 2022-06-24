@@ -50,6 +50,7 @@ namespace Patient_ApiSQLMigration.Entities
 		public string DeviceId { get; set; }
 		public string DeviceStatus { get; set; }
 		public string DeviceType { get; set; }
+		public string Program { get; set; }
 
 	}
 }
