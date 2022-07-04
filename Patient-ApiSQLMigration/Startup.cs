@@ -41,6 +41,9 @@ namespace Patient_ApiSQLMigration
             services.AddSingleton<ITimeLogData, TimeLogData>();
             services.AddSingleton<IDeviceData, DeviceData>();
             services.AddSingleton<IUserTableData, UserTableData>();
+            Environment.SetEnvironmentVariable("AWS_ACCESS_KEY_ID", Configuration["AWS:AccessKey"]);
+            Environment.SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", Configuration["AWS:SecretKey"]);
+            Environment.SetEnvironmentVariable("AWS_REGION", Configuration["AWS:Region"]);
 
 
             services.AddCors(options =>
