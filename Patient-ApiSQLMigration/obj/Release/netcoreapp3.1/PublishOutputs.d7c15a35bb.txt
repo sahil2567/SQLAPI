@@ -5,6 +5,10 @@ C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp
 C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\Patient-ApiSQLMigration.deps.json
 C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\Patient-ApiSQLMigration.runtimeconfig.json
 C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\Patient-ApiSQLMigration.pdb
+C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\AWSSDK.CognitoIdentityProvider.dll
+C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\AWSSDK.Core.dll
+C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\AWSSDK.Extensions.NETCore.Setup.dll
+C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\AWSSDK.S3.dll
 C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Primitives.dll
 C:\Users\sahil\Desktop\API\SQLAPI\Patient-ApiSQLMigration\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.OpenApi.dll

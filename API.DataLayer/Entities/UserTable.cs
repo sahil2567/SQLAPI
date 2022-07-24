@@ -14,6 +14,7 @@ namespace Patient_ApiSQLMigration.Entities
 		public string UserName { get; set; }
 		
 		public string UserType { get; set; }
-		
+		public string SNO { get; set; }
+
 	}
 }

@@ -23,7 +23,7 @@ namespace API.DataLayer
             {
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
-                    string query = "Insert Into [dbo].[UserTable] (UserId,UserName,UserType,Email) Values ('" + userTable.UserId + "','" + userTable.UserName + "','" + userTable.UserType + "','" + userTable.Email + "'); ";
+                    string query = "Insert Into [dbo].[UserTable] (UserId,UserName,UserType,Email,SNO) Values ('" + userTable.UserId + "','" + userTable.UserName + "','" + userTable.UserType + "','" + userTable.Email + "','" + userTable.SNO + "'); ";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.CommandType = System.Data.CommandType.Text;
                     con.Open();
@@ -91,6 +91,7 @@ namespace API.DataLayer
                                 UserType = table.Rows[i]["UserType"].ToString(),
                                 UserName = table.Rows[i]["UserName"].ToString(),
                                 Email = table.Rows[i]["Email"].ToString(),
+                                SNO= table.Rows[i]["SNO"].ToString(),
 
 
                             });
