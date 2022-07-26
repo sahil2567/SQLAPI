@@ -51,6 +51,9 @@ namespace Patient_ApiSQLMigration.Entities
 		public string DeviceStatus { get; set; }
 		public string DeviceType { get; set; }
 		public string Program { get; set; }
+		public string CptCode1 { get; set; }
+		public string DiagnosisRPM { get; set; }
+		public string DiagnosisCCM { get; set; }
 
 	}
 }

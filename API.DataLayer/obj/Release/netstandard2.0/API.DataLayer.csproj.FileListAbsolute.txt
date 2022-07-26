@@ -18,3 +18,13 @@ C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.D
 C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.csproj.CoreCompileInputs.cache
 C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.dll
 C:\Users\sahil\Desktop\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.pdb
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\bin\Release\netstandard2.0\API.DataLayer.deps.json
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\bin\Release\netstandard2.0\API.DataLayer.dll
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\bin\Release\netstandard2.0\API.DataLayer.pdb
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.csproj.AssemblyReference.cache
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.AssemblyInfoInputs.cache
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.AssemblyInfo.cs
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.csproj.CoreCompileInputs.cache
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.dll
+G:\WORK\Apatternplus\API\SQLAPI\API.DataLayer\obj\Release\netstandard2.0\API.DataLayer.pdb

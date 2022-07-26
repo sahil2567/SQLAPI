@@ -23,7 +23,7 @@ namespace API.DataLayer
             {
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
-                    string query = "Insert Into [dbo].[PatientTable] (SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program) Values ('" + patient.SK + "','" + patient.ActiveStatus + "','" + patient.CarecoordinatorId + "','" + patient.CarecoordinatorName + "','" + patient.City + "','" + patient.Coach + "','" + patient.CoachId + "','" + patient.ConnectionId + "','" + patient.ContactNo + "','" + patient.CreatedDate + "','" + patient.diagnosisId + "','" + patient.diastolic + "','" + patient.DOB + "','" + patient.DoctorId+"','" + patient.DoctorName + "','" + patient.Email + "','" + patient.FirstName + "','" + patient.Gender + "','" + patient.GSI1PK + "','" + patient.GSI1SK + "','" + patient.Height + "','" + patient.Lang + "','" + patient.LastName + "','" + patient.MiddleName + "','" + patient.MobilePhone + "','" + patient.Notes + "','" + patient.OTP + "','" + patient.ProfileImage + "','" + patient.reading + "','" + patient.St + "','" + patient.Street + "','" + patient.systolic + "','" + patient.UserId + "','" + patient.UserName + "','" + patient.UserTimeZone + "','" + patient.UserType + "','" + patient.Weight + "','" + patient.WorkPhone + "','" + patient.Zip + "','" + patient.DeviceId + "','" + patient.DeviceStatus + "','" + patient.DeviceType + "','" + patient.Program + "'); ";
+                    string query = "Insert Into [dbo].[PatientTable] (SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program,CptCode1,DiagnosisRPM,DiagnosisCCM) Values ('" + patient.SK + "','" + patient.ActiveStatus + "','" + patient.CarecoordinatorId + "','" + patient.CarecoordinatorName + "','" + patient.City + "','" + patient.Coach + "','" + patient.CoachId + "','" + patient.ConnectionId + "','" + patient.ContactNo + "','" + patient.CreatedDate + "','" + patient.diagnosisId + "','" + patient.diastolic + "','" + patient.DOB + "','" + patient.DoctorId+"','" + patient.DoctorName + "','" + patient.Email + "','" + patient.FirstName + "','" + patient.Gender + "','" + patient.GSI1PK + "','" + patient.GSI1SK + "','" + patient.Height + "','" + patient.Lang + "','" + patient.LastName + "','" + patient.MiddleName + "','" + patient.MobilePhone + "','" + patient.Notes + "','" + patient.OTP + "','" + patient.ProfileImage + "','" + patient.reading + "','" + patient.St + "','" + patient.Street + "','" + patient.systolic + "','" + patient.UserId + "','" + patient.UserName + "','" + patient.UserTimeZone + "','" + patient.UserType + "','" + patient.Weight + "','" + patient.WorkPhone + "','" + patient.Zip + "','" + patient.DeviceId + "','" + patient.DeviceStatus + "','" + patient.DeviceType + "','" + patient.Program + "','" + patient.CptCode1 + "','" + patient.DiagnosisRPM + "','" + patient.DiagnosisCCM + "'); ";
                     string query1 = "Insert Into [dbo].[UserTable] (UserId,UserName,UserType,Email) Values ('" + patient.UserId + "','" + patient.UserName + "','" + patient.UserType + "','" + patient.Email + "'); ";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlCommand cmd1 = new SqlCommand(query1, con);
@@ -80,7 +80,7 @@ namespace API.DataLayer
                 {
                     if (DoctorId.Contains("DOCTOR"))
                     {
-                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program FROM [dbo].[PatientTable] Where DoctorId LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
+                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program,CptCode1,DiagnosisRPM,DiagnosisCCM FROM [dbo].[PatientTable] Where DoctorId LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
                         cmd.CommandType = System.Data.CommandType.Text;
                         DataTable table = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -135,6 +135,9 @@ namespace API.DataLayer
                                     DeviceStatus = table.Rows[i]["DeviceStatus"].ToString(),
                                     DeviceType = table.Rows[i]["DeviceType"].ToString(),
                                     Program = table.Rows[i]["Program"].ToString(),
+                                    CptCode1 = table.Rows[i]["CptCode1"].ToString(),
+                                    DiagnosisRPM = table.Rows[i]["DiagnosisRPM"].ToString(),
+                                    DiagnosisCCM = table.Rows[i]["DiagnosisCCM"].ToString()
                                 });
                             }
                         }
@@ -143,7 +146,7 @@ namespace API.DataLayer
                     else if (DoctorId.Contains("PATIENT"))
                     {
 
-                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program FROM [dbo].[PatientTable] Where SK LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
+                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program,CptCode1,DiagnosisRPM,DiagnosisCCM FROM [dbo].[PatientTable] Where SK LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
                         cmd.CommandType = System.Data.CommandType.Text;
                         DataTable table = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -198,6 +201,9 @@ namespace API.DataLayer
                                     DeviceStatus = table.Rows[i]["DeviceStatus"].ToString(),
                                     DeviceType = table.Rows[i]["DeviceType"].ToString(),
                                     Program = table.Rows[i]["Program"].ToString(),
+                                    CptCode1 = table.Rows[i]["CptCode1"].ToString(),
+                                    DiagnosisRPM = table.Rows[i]["DiagnosisRPM"].ToString(),
+                                    DiagnosisCCM = table.Rows[i]["DiagnosisCCM"].ToString()
                                 });
                             }
                         }
@@ -205,7 +211,7 @@ namespace API.DataLayer
                     }
                     else if (DoctorId.Contains("CARECOORDINATOR"))
                     {
-                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program FROM [dbo].[PatientTable] Where CarecoordinatorId LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
+                        SqlCommand cmd = new SqlCommand("SELECT * FROM [dbo].[PatientTable] Where CarecoordinatorId LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
                         cmd.CommandType = System.Data.CommandType.Text;
                         DataTable table = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -260,6 +266,9 @@ namespace API.DataLayer
                                     DeviceStatus = table.Rows[i]["DeviceStatus"].ToString(),
                                     DeviceType = table.Rows[i]["DeviceType"].ToString(),
                                     Program = table.Rows[i]["Program"].ToString(),
+                                    CptCode1 = table.Rows[i]["CptCode1"].ToString(),
+                                    DiagnosisRPM = table.Rows[i]["DiagnosisRPM"].ToString(),
+                                    DiagnosisCCM = table.Rows[i]["DiagnosisCCM"].ToString()
                                 });
                             }
                         }
@@ -267,7 +276,7 @@ namespace API.DataLayer
                     }
                     else if (DoctorId.Contains("COACH"))
                     {
-                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program FROM [dbo].[PatientTable] Where CoachId LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
+                        SqlCommand cmd = new SqlCommand("SELECT * FROM [dbo].[PatientTable] Where CoachId LIKE '" + DoctorId.ToString() + "' AND ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
                         cmd.CommandType = System.Data.CommandType.Text;
                         DataTable table = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -322,6 +331,9 @@ namespace API.DataLayer
                                     DeviceStatus = table.Rows[i]["DeviceStatus"].ToString(),
                                     DeviceType = table.Rows[i]["DeviceType"].ToString(),
                                     Program = table.Rows[i]["Program"].ToString(),
+                                    CptCode1 = table.Rows[i]["CptCode1"].ToString(),
+                                    DiagnosisRPM = table.Rows[i]["DiagnosisRPM"].ToString(),
+                                    DiagnosisCCM = table.Rows[i]["DiagnosisCCM"].ToString()
                                 });
                             }
                         }
@@ -330,7 +342,7 @@ namespace API.DataLayer
                     else 
                     {
 
-                        SqlCommand cmd = new SqlCommand("SELECT Id,SK,ActiveStatus,CarecoordinatorId,CarecoordinatorName,City,Coach,CoachId,ConnectionId,ContactNo,CreatedDate,diagnosisId,diastolic,DOB,DoctorId,DoctorName,Email,FirstName,Gender,GSI1PK,GSI1SK,Height,Lang,LastName,MiddleName,MobilePhone,Notes,OTP,ProfileImage,reading,St,Street,systolic,UserId,UserName,UserTimeZone,UserType,Weight,WorkPhone,Zip,DeviceId,DeviceStatus,DeviceType,Program FROM [dbo].[PatientTable]Where ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
+                        SqlCommand cmd = new SqlCommand("SELECT * FROM [dbo].[PatientTable]Where ActiveStatus LIKE '" + ActiveStatus.ToString() + "'", con);
                         cmd.CommandType = System.Data.CommandType.Text;
                         DataTable table = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -385,6 +397,9 @@ namespace API.DataLayer
                                     DeviceStatus = table.Rows[i]["DeviceStatus"].ToString(),
                                     DeviceType = table.Rows[i]["DeviceType"].ToString(),
                                     Program = table.Rows[i]["Program"].ToString(),
+                                    CptCode1 = table.Rows[i]["CptCode1"].ToString(),
+                                    DiagnosisRPM = table.Rows[i]["DiagnosisRPM"].ToString(),
+                                    DiagnosisCCM = table.Rows[i]["DiagnosisCCM"].ToString()
                                 });
                             }
                         }
@@ -408,7 +423,7 @@ namespace API.DataLayer
             {
                 using (SqlConnection con = new SqlConnection(configuration.GetConnectionString("DBConnectionString").ToString()))
                 {
-                    string query = "Update [dbo].[PatientTable] SET SK='" + patient.SK + "',ActiveStatus='" + patient.ActiveStatus + "',CarecoordinatorId='" + patient.CarecoordinatorId + "',CarecoordinatorName='" + patient.CarecoordinatorName + "',City='" + patient.City + "',Coach='" + patient.Coach + "',CoachId='" + patient.CoachId + "',ConnectionId='" + patient.ConnectionId + "',ContactNo='" + patient.ContactNo + "',CreatedDate='" + patient.CreatedDate + "',diagnosisId='" + patient.diagnosisId + "',diastolic='" + patient.diastolic + "',DOB='" + patient.DOB + "',DoctorId='" + patient.DoctorId +"',DoctorName='" + patient.DoctorName + "',Email='" + patient.Email + "',FirstName='" + patient.FirstName + "',Gender='" + patient.Gender + "',GSI1PK='" + patient.GSI1PK + "',GSI1SK='" + patient.GSI1SK + "',Height='" + patient.Height + "',Lang='" + patient.Lang + "',LastName='" + patient.LastName + "',MiddleName='" + patient.MiddleName + "',MobilePhone='" + patient.MobilePhone + "',Notes='" + patient.Notes + "',OTP='" + patient.OTP + "',ProfileImage='" + patient.ProfileImage + "',reading='" + patient.reading + "',St='" + patient.St + "',Street='" + patient.Street + "',systolic='" + patient.systolic + "',UserId='" + patient.UserId + "',UserName='" + patient.UserName + "',UserTimeZone='" + patient.UserTimeZone + "',UserType='" + patient.UserType + "',Weight='" + patient.Weight + "',WorkPhone='" + patient.WorkPhone + "',Zip='" + patient.Zip + "',DeviceId='" + patient.DeviceId + "',DeviceStatus='" + patient.DeviceStatus + "',DeviceType='" + patient.DeviceType + "',Program='" + patient.Program + "' Where Id = " + patient.Id.ToString();
+                    string query = "Update [dbo].[PatientTable] SET SK='" + patient.SK + "',ActiveStatus='" + patient.ActiveStatus + "',CarecoordinatorId='" + patient.CarecoordinatorId + "',CarecoordinatorName='" + patient.CarecoordinatorName + "',City='" + patient.City + "',Coach='" + patient.Coach + "',CoachId='" + patient.CoachId + "',ConnectionId='" + patient.ConnectionId + "',ContactNo='" + patient.ContactNo + "',CreatedDate='" + patient.CreatedDate + "',diagnosisId='" + patient.diagnosisId + "',diastolic='" + patient.diastolic + "',DOB='" + patient.DOB + "',DoctorId='" + patient.DoctorId +"',DoctorName='" + patient.DoctorName + "',Email='" + patient.Email + "',FirstName='" + patient.FirstName + "',Gender='" + patient.Gender + "',GSI1PK='" + patient.GSI1PK + "',GSI1SK='" + patient.GSI1SK + "',Height='" + patient.Height + "',Lang='" + patient.Lang + "',LastName='" + patient.LastName + "',MiddleName='" + patient.MiddleName + "',MobilePhone='" + patient.MobilePhone + "',Notes='" + patient.Notes + "',OTP='" + patient.OTP + "',ProfileImage='" + patient.ProfileImage + "',reading='" + patient.reading + "',St='" + patient.St + "',Street='" + patient.Street + "',systolic='" + patient.systolic + "',UserId='" + patient.UserId + "',UserName='" + patient.UserName + "',UserTimeZone='" + patient.UserTimeZone + "',UserType='" + patient.UserType + "',Weight='" + patient.Weight + "',WorkPhone='" + patient.WorkPhone + "',Zip='" + patient.Zip + "',DeviceId='" + patient.DeviceId + "',DeviceStatus='" + patient.DeviceStatus + "',DeviceType='" + patient.DeviceType + "',Program='" + patient.Program + "',CptCode1='" + patient.CptCode1 + "',DiagnosisRPM='" + patient.DiagnosisRPM + "',DiagnosisCCM='" + patient.DiagnosisCCM + "' Where Id = " + patient.Id.ToString();
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.CommandType = System.Data.CommandType.Text;
                     con.Open();

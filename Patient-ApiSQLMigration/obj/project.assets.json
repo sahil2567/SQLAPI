@@ -970,11 +970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
+      "projectUniqueName": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
       "projectName": "Patient-ApiSQLMigration",
-      "projectPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
+      "projectPath": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\Patient-ApiSQLMigration\\Patient-ApiSQLMigration.csproj",
       "packagesPath": "C:\\Users\\sahil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\Patient-ApiSQLMigration\\obj\\",
+      "outputPath": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\Patient-ApiSQLMigration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -996,8 +996,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {
-              "projectPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj"
+            "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {
+              "projectPath": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj"
             }
           }
         }

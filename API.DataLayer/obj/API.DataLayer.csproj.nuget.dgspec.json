@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {}
+    "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {
+    "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj",
+        "projectUniqueName": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj",
         "projectName": "API.DataLayer",
-        "projectPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj",
+        "projectPath": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\API.DataLayer.csproj",
         "packagesPath": "C:\\Users\\sahil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sahil\\Desktop\\API\\SQLAPI\\API.DataLayer\\obj\\",
+        "outputPath": "G:\\WORK\\Apatternplus\\API\\SQLAPI\\API.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
